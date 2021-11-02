@@ -1,0 +1,135 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos bases */
+
+body{
+    background-color: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    align-items: center;
+    display: flex;
+    margin-right: 30px;
+    
+}
+
+.bnt{
+    margin-left: 20px;
+}
+
+.bnt i{
+    margin-right: 10px;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+
+}
+
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    
+
+}
+
+
+header nav a:hover{
+    color: #fff;
+}
+
+header div i:hover{
+    color: gray;
+    cursor: pointer;
+
+}
+
+
+/* Filme Principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/duna_fundo.jpg');
+  
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.titulo{
+    font-size: 50px;
+    margin-top: 50px;
+
+    
+}
+.sinopse{
+    margin-top: 10px;
+    
+}
+.filme-principal .sinopse{
+    margin-bottom: 30px;
+    
+}
+
+
+.botao{
+    padding: 15px 30px;
+    background-color: rgba(0,0,0,.50);
+    color: white;
+    margin-right: 15px;
+    font-size: 12px;
+    border: white;
+   
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+
+}
+.botao i{
+    margin-right: 10px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 80%;
+
+}
+.box-movies{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
